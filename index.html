@@ -7,10 +7,10 @@
     <script src="https://cdn.datatables.net/plug-ins/1.10.20/sorting/absolute.js"></script>
     <script>
       jQuery(function($){
-      var nameType = $.fn.DataTable.absoluteOrder( {
+      var nameType = $.fn.dataTable.absoluteOrder( {
       value: "", position: 'bottom'
       } );
-      $("#foo-table").DataTable({
+      $("#foo-table").dataTable({
       ajax: "data.json",
       columnDefs: [{ type : nameType }]
       });
