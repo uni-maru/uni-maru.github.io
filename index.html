@@ -8,13 +8,10 @@
       jQuery(function($){
       $("#foo-table").DataTable({
       ajax: "data.json",
-      "columnDefs": [
-      {
-        "data": null,
+      "columnDefs": [{
+        "targets": 999
         "defaultContent": "-",
-        "targets": 9999
-      }
-      ]
+      }]
       });
       });
     </script>
