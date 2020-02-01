@@ -12,6 +12,8 @@
       } );
       $("#foo-table").dataTable({
       ajax: "data.json",
+      order: [[ 1, "asc" ]],
+      displayLength: 50,
       columnDefs: [{ targets : '_all', type : nameType }]
       });
       });
