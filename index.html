@@ -20,11 +20,7 @@
       jQuery(function($){
       $("#foo-table").DataTable({
       ajax: "data.json",
-      "aoColumns": [
-         null,
-         null,
-         { "sType" : "mystring" }
-      ]
+      columnDefs: [{ "type" : "mystring" }]
       });
       });
     </script>
