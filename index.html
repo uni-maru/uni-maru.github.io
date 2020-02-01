@@ -12,7 +12,7 @@
       } );
       $("#foo-table").dataTable({
       ajax: "data.json",
-      columnDefs: [{ type : nameType }]
+      columnDefs: [{ targets : '_all', type : nameType }]
       });
       });
     </script>
