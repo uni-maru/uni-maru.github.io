@@ -8,11 +8,7 @@
         jQuery(function($){
           $("#foo-table").DataTable({
             ajax: { url: "data.json", dataSrc: '' },
-            columns: [
-              { data: "id" },
-              { data: "name" },
-              { data: "place" }
-   	    ]
+            data: data
           });
 	});
     </script>
