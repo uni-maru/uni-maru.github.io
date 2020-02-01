@@ -7,7 +7,14 @@
     <script>
       jQuery(function($){
       $("#foo-table").DataTable({
-      ajax: "data.json"
+      ajax: "data.json",
+      "columnDefs": [
+      {
+        "data": null,
+        "defaultContent": "-",
+        "targets": 9999
+      }
+      ]
       });
       });
     </script>
