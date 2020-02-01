@@ -7,20 +7,20 @@
     <script>
       jQuery.fn.dataTableExt.oSort['mystring-asc'] = function(x,y) {
         if (x==y) return 0;
-        if (x == null) return -1;
-        if (y == null) return 1;
+        if (x == "") return -1;
+        if (y == "") return 1;
         if (x > y) return 1;
       }
       jQuery.fn.dataTableExt.oSort['mystring-desc'] = function(y,x) {
         if (x==y) return 0;
-        if (x == null) return -1;
-        if (y == null) return 1;
+        if (x == "") return -1;
+        if (y == "") return 1;
         if (x > y) return 1;
       }
       jQuery(function($){
       $("#foo-table").DataTable({
       ajax: "data.json",
-      columnDefs: [{ "type" : "mystring" }]
+      columnDefs: [{ type : 'mystring' }]
       });
       });
     </script>
